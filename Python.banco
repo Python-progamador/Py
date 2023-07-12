@@ -1,0 +1,44 @@
+from time import sleep
+print('olá,senhor bem,vindo a o banco do cidadão vou faze uma pergunta ')
+senha=int(input('qual e a senha: '))
+if senha ==992:
+	print('ANALIZANDO SENHA')
+	sleep(1)
+	print('ACESSO ALTORIZADO')
+else:
+	print('ANALIZANDO SENHA')
+	sleep(1)
+	print('ACESSO NEGADO')
+	primt('n')
+valor=(3500)
+print(valor)
+print('esse e a quantia de dinhero guardado que o senhor tem')
+print('oque o senhor deseja fazer')
+print('suas opções:\n sacar\n depositar\n pix\n')
+acao=input('oque o senhor deseja fazer: ')
+if acao=='pix':
+	print('para quem e esse pix')
+	amigos=input('vinicios,diana,vicente...para quem deseja enviar o pix ')
+	if 'amigos'=='vinicius'or 'diana'or 'vicente':
+		valoor=int(input('qunto o senhor deseja enviar para {} '.format(amigos)))
+	print(valor-valoor)
+	print('essa e a quantia de dinheiro que o senho ainda tem ')
+if acao=='sacar':
+	sa=int(input('quanto o senhor que sacar: '))
+	print('foi depositado {}$ na sua conta'.format(sa))
+	print(sa-valor)
+	print('essa e a quantia de dinheiro que o senhor ainda tem ')
+if acao=='depositar':
+	escolha=input('o senhor que depositar na sua conta \nou na de outra pessoa: ')
+	if escolha == 'depositar na minha conta'or escolha == 'quero depositar na minha conta'or escolha=='na minha conta':
+		total=int(input('quanto o senhor que depositar na sua conta:  '))
+		print(total+valor)
+		print('essa e a quantia de dinhero que o senhor tem')
+if escolha=='quero depositar na conta de outra pessoa'or escolha== 'na conta de outra pessoa':
+	print('para quem o senhor quer depositar: ')
+	amigo=input('vinicius,diana,vicente...para quem deseja enviar o deposito ')
+	if 'amigo'=='vinicius'or 'diana'or 'vicente':
+		vur=int(input('quanto o senhor deseja enviar para {} '.format(amigo)))
+		print(vur-valor)
+		print('essa e a quantia de dinheiro queo senhor tem ainda')
+		print('o deposito pode demorar ate 24 horas')
